@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thestination</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+
+
+
+                <ul class="nav-links close" id="nav-links">
+                    <li><a href="#home" class=active>Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div id="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Reach your
+                    destination with
+                    <span class="accent">Thestination</span>
+                </h1>
+
+                <div class="buttons">
+                    <div class="btn btn-accent">Reach the destination</div>
+                    <div class="btn">About us</div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+
+        <script>
+            const menuBtn = document.getElementById('hamburger-menu');
+            const navLinks = document.getElementById('nav-links');
+            const hero = document.querySelector(".hero")
+
+            menuBtn.addEventListener('click', () => {
+                menuBtn.classList.toggle('open');
+                navLinks.classList.toggle('open');
+                navLinks.classList.toggle('close');
+                hero.classList.toggle('blur');
+            });
+        </script>
+    </body>
