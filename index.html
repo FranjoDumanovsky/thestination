@@ -6,6 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Thestination</title>
         <link rel="stylesheet" href="/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+              rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+              rel="stylesheet">
+
     </head>
 
     <body>
@@ -34,7 +45,7 @@
             <div class="hero-content">
                 <h1>Reach your
                     destination with
-                    <span class="accent">Thestination</span>
+                    <span class="header-logo"><img src="images/logo.png" alt=""></span>
                 </h1>
 
                 <div class="buttons">
@@ -49,12 +60,17 @@
         <script>
             const menuBtn = document.getElementById('hamburger-menu');
             const navLinks = document.getElementById('nav-links');
-            const hero = document.querySelector(".hero")
+            const hero = document.querySelector(".hero");
 
             menuBtn.addEventListener('click', () => {
+                if (navLinks.classList.contains('open')) {
+                    navLinks.classList.remove('open');
+                    navLinks.classList.add('close');
+                } else {
+                    navLinks.classList.remove('close');
+                    navLinks.classList.add('open');
+                }
                 menuBtn.classList.toggle('open');
-                navLinks.classList.toggle('open');
-                navLinks.classList.toggle('close');
                 hero.classList.toggle('blur');
             });
         </script>
