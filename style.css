@@ -293,7 +293,7 @@ nav {
   }
 
   .nav-links li:not(:last-child) {
-    margin-right-side: 0rem;
+    margin-right: 0rem;
   }
 
   .nav-links.open li {
