@@ -21,30 +21,32 @@
 
     <body>
         <header>
-            <nav>
-                <div class="logo">
-                    <img src="images/logo.png" alt="">
-                </div>
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <img src="images/logo.png" alt="">
+                    </div>
 
 
 
-                <ul class="nav-links close" id="nav-links">
-                    <li><a href="#home" class=active>Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div id="hamburger-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
+                    <ul class="nav-links close" id="nav-links">
+                        <li><a href="#home" class=active>Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div id="hamburger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
         </header>
         <section class="hero">
             <div class="hero-content">
-                <h1>Reach your
-                    destination with
+                <h1>Reach your <br>
+                    destination with <br>
                     <span class="header-logo"><img src="images/logo.png" alt=""></span>
                 </h1>
 
@@ -57,21 +59,59 @@
             </div>
         </section>
 
-        <script>
-            const menuBtn = document.getElementById('hamburger-menu');
-            const navLinks = document.getElementById('nav-links');
-            const hero = document.querySelector(".hero");
+        <main>
+            <section>
+                <div class="container-full">
+                    <div class="section-flex-container">
+                        <div class="image-container">
+                            <img src="images/section_image_01.jpg" alt="">
+                        </div>
+                        <div class="text-container">
+                            <h3 class="section-title">
+                                About us
+                            </h3>
+                            <p class="section-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nulla vitae leo
+                                dictum
+                                rhoncus. Donec sit amet lobortis lectus. Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit. Praesent et nulla vitae leo dictum rhoncus. Donec sit amet lobortis lectus. Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nulla vitae
+                                leo dictum rhoncus.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="line-container"></div>
+                </div>
+            </section>
 
-            menuBtn.addEventListener('click', () => {
-                if (navLinks.classList.contains('open')) {
-                    navLinks.classList.remove('open');
-                    navLinks.classList.add('close');
-                } else {
-                    navLinks.classList.remove('close');
-                    navLinks.classList.add('open');
-                }
-                menuBtn.classList.toggle('open');
-                hero.classList.toggle('blur');
-            });
-        </script>
+
+            <section>
+                <div class="container-full right-side">
+                    <div class="section-flex-container">
+
+                        <div class="text-container">
+                            <h3 class="section-title">
+                                About us
+                            </h3>
+                            <p class="section-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nulla vitae leo
+                                dictum
+                                rhoncus. Donec sit amet lobortis lectus. Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit. Praesent et nulla vitae leo dictum rhoncus. Donec sit amet lobortis lectus. Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nulla vitae
+                                leo dictum rhoncus.
+                            </p>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/section_image_02.jpg" alt="">
+                        </div>
+
+                    </div>
+            </section>
+        </main>
+
+
+        <script src="script.js"></script>
     </body>
