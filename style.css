@@ -702,7 +702,7 @@ nav {
 }
 
 .card-image {
-  background: url("/images/section_image_02.jpg") no-repeat center center/cover;
+  background: url("images/section_image_02.jpg") no-repeat center center/cover;
   height: 200px;
   width: 100%;
   border-top-left-radius: 20px;
